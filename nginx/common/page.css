@@ -1,0 +1,70 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background: #efefef;
+}
+
+.profilePage {
+  background: #fefefe;
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  margin: 0 auto;
+  padding: 32px;
+  width: 960px;
+}
+
+.profilePage h1 {
+  font-size: 32px;
+  line-height: 46px;
+  margin: 46px 0 24px;
+}
+
+.profileList {
+  margin: 32px 0;
+  border-top: 1px solid #dedede;
+  padding: 32px 0;
+}
+
+.profileList h2 {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 32px 0 16px;
+}
+
+.profileList__image {
+  background-color: blue;
+  color: white;
+  margin: 16px;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: inline-block;
+  line-height: 56px;
+  text-align: center;
+}
+
+.tweet {
+  font-size: 24px;
+  background: #efefef;
+  padding: 24px;
+  width: calc(100% - 48px);
+  font-style: italic;
+}
+
+.likeButton {
+  border: 1px solid coral;
+  background: lightcoral;
+  color: #fff;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.likeButton:hover {
+  background: coral;
+}

@@ -1,0 +1,28 @@
+version: "2"
+services:
+  nginx:
+    image: nginx:1.17.3
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/nginx.conf
+      - ./nginx/common:/usr/share/nginx/html/common
+    ports:
+      - "3000:3000"
+    depends_on:
+      - team_explore
+      - team_profilepage
+      - team_tweet
+
+  team_explore:
+    build: ./team-explore
+    ports:
+      - "3001:3001"
+
+  team_profilepage:
+    build: ./team-profilepage
+    ports:
+      - "3003:3003"
+
+  team_tweet:
+    build: ./team-tweet
+    ports:
+      - "3002:3002"
